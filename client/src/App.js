@@ -61,11 +61,17 @@ class App extends Component {
     return (
       < div className="App" >
         <Score score={this.state.score} topScore={this.state.topScore} message={this.state.message} />
-        {
-          this.state.tiles.map((tile, idx) =>
-            <Thumbnail src={tile} key={idx} onClick={this.handleTileClick} />
-          )
-        }
+        <div className="row">
+          <div className="col-sm-12 text-center">
+            <div class="container">
+              {
+                this.state.tiles.map((tile, idx) =>
+                  <Thumbnail src={tile} key={idx} onClick={this.handleTileClick} />
+                )
+              }
+            </div>
+          </div>
+        </div>
       </div >
     );
   }
