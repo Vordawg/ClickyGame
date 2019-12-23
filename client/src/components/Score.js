@@ -8,11 +8,14 @@ export default function Score(props) {
     };
 
     let titlestyles = {
+        color: "white",
         fontWeight: "bold"
     };
     return (
         <div className="row" style={styles}>
-            <span className="col-sm-4 text-center" style={titlestyles}>Clicky Game</span>
+            <span className="col-sm-4 text-center">
+                <a href="https://clickygameiw.herokuapp.com/" style={titlestyles}>Clicky Game</a>
+            </span>
             <span className="col-sm-4 text-center">{props.message}</span>
             <span className="col-sm-4 text-center">Score: {props.score} | Top Score: {props.topScore}</span>
         </div>
