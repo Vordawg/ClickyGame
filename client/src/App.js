@@ -57,6 +57,13 @@ class App extends Component {
     });
   }
 
+  componentDidMount = () => {
+    const shuffled = this.state.tiles.sort(() => 0.5 - Math.random());
+    this.setState({
+      tiles: shuffled
+    });
+  }
+
   render() {
     return (
       < div className="App" >
