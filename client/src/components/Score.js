@@ -12,7 +12,7 @@ export default function Score(props) {
         fontWeight: "bold"
     };
     return (
-        <div className="row" style={styles}>
+        <div className="row sticky-top" style={styles}>
             <span className="col-sm-4 text-center">
                 <a href="https://clickygameiw.herokuapp.com/" style={titlestyles}>Clicky Game</a>
             </span>
